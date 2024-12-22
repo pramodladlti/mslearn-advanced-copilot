@@ -55,6 +55,39 @@ During this step we will be using an agent (workspace) to write the project docu
 
 Finally, verify the new endpoint is working by trying it out by going to the `/docs` endpoint and confirming that the endpoint shows up.
 
+## How to Run the Project
+
+To run this project, follow these steps:
+
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/MicrosoftDocs/mslearn-advanced-copilot.git
+    cd mslearn-advanced-copilot
+    ```
+
+2. **Create and activate a virtual environment**:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. **Install the dependencies**:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4. **Run the application**:
+    ```sh
+    uvicorn main:app --reload
+    ```
+
+5. **Access the API documentation**:
+    Open your browser and go to `http://127.0.0.1:8000/docs` to see the interactive API documentation.
+
+6. **Run the tests**:
+    ```sh
+    pytest
+    ```
 
 🚀 Congratulations, through the exercise, you haven't only used copilot to generate code but also done it in an interactive and fun way! You can use GitHub Copilot to not only generate code, but write documentation, test your applications and more.
 
@@ -76,3 +109,5 @@ Privacy information can be found at https://privacy.microsoft.com/en-us/
 
 Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents,
 or trademarks, whether by implication, estoppel or otherwise.
+
+
